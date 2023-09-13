@@ -1,7 +1,7 @@
 import math
 class Pagination():
     current_page = 1
-    def __init__(self, items = None, pageSize = 10):
+    def __init__(self, items = [], pageSize = 10):
         self.items = items
         self.pageSize = pageSize
         self.totalPages = math.ceil(len(items) / pageSize)

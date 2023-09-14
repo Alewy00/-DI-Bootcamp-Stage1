@@ -15,24 +15,33 @@ def get_words_from_file():
         # print(new_file)
     return new_file
 
-# print(get_words_from_file)
-get_words_from_file()
+# get_words_from_file()
+import random
+def random_sent(length):
+       sent = []
+       for i in range(length):
+          i = random.choice(get_words_from_file())
+          sent.append(i.lower())
+       print(' '.join(sent).replace('\n', ''))
 
 def main():
     print("insructions")
     sent_length = input("length of sent")
-    try:
-        if(sent_length.isalpha()):
-            raise TypeError("needs to be number")
-        if(int(sent_length) <= 1 or int(sent_length) >= 21 ):
-            raise ValueError("Not proper size")
-        else:
-            print("good")
-    except TypeError as error:
-        print(error)
-        main()
-    except ValueError as error:
-        print(error)
-        main()
+    # try:
+    if(sent_length.isalpha()):
+        raise TypeError("needs to be number")
+    if(int(sent_length) <= 1 or int(sent_length) >= 21 ):
+        raise ValueError("Not proper size")
+    else:
+        print("good")
+        word = random_sent(int(sent_length))
+        # print(word)
+    # except TypeError as error:
+    #     print("type error")
+    #     # main()
+    # except ValueError as error:
+    #     print(error)
+        # main()
 
-    
+
+main()

@@ -5,7 +5,7 @@ class Text:
 
 
     def allFreq(self):
-        print("hit")
+        # print("hit")
         dict_word = {}
         list_word = self.text.split(" ")
         for word in list_word:

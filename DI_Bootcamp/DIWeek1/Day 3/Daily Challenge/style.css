@@ -1,0 +1,37 @@
+body{
+    width: 125vh;
+}
+
+div{
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-style: solid;
+    border-color: black;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 1f, 1f, 1f;
+    grid-template-areas: 
+    "l m r"
+    ;
+
+}
+#left{
+    grid-area: l;
+}
+#middle{
+    grid-area: m;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-evenly;
+    justify-content: left;
+}
+#middle div{
+    margin: 20px;
+}
+#right{
+    grid-area: r;
+}

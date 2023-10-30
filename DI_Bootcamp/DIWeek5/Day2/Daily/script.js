@@ -22,7 +22,7 @@ function getValue(e) {
   ) {
     story.append(
       document.createTextNode(
-        `Once upon a time ${noun} became ${adjective} butterfly. ${person} decided ${verb} to the ${place} and found a ${noun} there a billion dollars.`
+        `Once upon a time ${noun} became ${adjective}. ${person} decided ${verb} to the ${place} and found a ${noun}.`
       )
     );
   } else {

@@ -6,6 +6,12 @@
     <title>Document</title>
   </head>
   <body>
+    <form onsubmit="event.preventDefault()" action="index.html" method="get">
+      <input type="text" id="fname" />
+      <input type="text" id="lname" />
+      <button onclick="submitForm()">Send</button>
+    </form>
+    <h3 id="output"></h3>
     <script src="script.js"></script>
   </body>
 </html>

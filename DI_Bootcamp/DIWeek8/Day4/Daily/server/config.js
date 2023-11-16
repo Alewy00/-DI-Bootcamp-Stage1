@@ -14,13 +14,13 @@ const db = knex({
 
 // console.log(process.env.PASSWORD);
 
-db.raw("SELECT 1")
-  .then(() => {
-    console.log("Connected to the database");
-  })
-  .catch((error) => {
-    console.error("Error connecting to the database:", error);
-  });
+// db.raw("SELECT 1")
+//   .then(() => {
+//     console.log("Connected to the database");
+//   })
+//   .catch((error) => {
+//     console.error("Error connecting to the database:", error);
+//   });
 
 module.exports = {
   db,

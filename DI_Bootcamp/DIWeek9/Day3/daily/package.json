@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-dom": "^18.2.0",
+    "react-responsive-carousel": "^3.2.23"
+  }
+}

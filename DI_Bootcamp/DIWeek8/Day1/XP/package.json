@@ -1,8 +1,11 @@
 {
-  "dependencies": {
-    "axios": "^1.6.0",
-    "express": "^4.18.2",
-    "fs": "^0.0.1-security",
-    "redux-logger": "^3.0.6"
-  }
+  "name": "ex-xp",
+  "version": "1.0.0",
+  "description": "exercise",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aaron",
+  "license": "ISC"
 }
